@@ -41,3 +41,14 @@ Before submitting a pull request, please, read and sign the [Contributors Licens
 ## Related
 
 The [JustDecompile Plugins](https://github.com/telerik/justdecompile-plugins) are also available on GitHub under various open source licenses. 
+
+public class App
+    {
+        public static void Main(string[] args)
+        {
+            string[] testArgs = { @"/target:C:\Users\vinor\Desktop\DemoApp\MaterialDesignDemo.exe", @"/out", @"C:\Users\vinor\Desktop\DemoApp\Source" };
+            GeneratorProjectInfo generatorProjectInfo = CommandLineManager.Parse(testArgs);
+            CmdShell shell = new CmdShell();
+            shell.Run(generatorProjectInfo);
+        }
+    }
